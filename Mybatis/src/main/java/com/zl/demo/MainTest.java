@@ -1,6 +1,7 @@
 package com.zl.demo;
 
 import com.zl.demo.entity.Student;
+import lombok.extern.log4j.Log4j;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -13,6 +14,7 @@ import java.io.IOException;
  * @creatTime 2023-05-17
  */
 public class MainTest {
+
     public static void main(String[] args) throws IOException {
 
         SqlSessionFactoryBuilder sqlSessionFactoryBuilder = new SqlSessionFactoryBuilder();

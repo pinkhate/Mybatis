@@ -3,6 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+
+
+<!--    加载properties文件-->
+    <properties resource="db.properties"/>
 <!--    //配置系统环境-->
 
 
@@ -11,8 +15,8 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
 <!--                配置数据库连接信息-->
-                <property name="username" value="root"/>
-                <property name="password" value="root"/>
+                <property name="username" value="${db.username}"/>
+                <property name="password" value="${db.password}"/>
                 <property name="url" value="jdbc:mysql:///studb?serverTimezone=Asia/Shanghai"/>
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
             </dataSource>
