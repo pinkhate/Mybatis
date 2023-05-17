@@ -1,4 +1,4 @@
-package co.zl.demo.entity;
+package com.zl.demo.entity;
 
 import lombok.Data;
 

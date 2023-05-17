@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zl.demo.dao.StudentDao">
+
+<!--
+id 是查询标签的唯一名字
+resultType 表示这个查询返回的数据类型
+#{sno}表示传入的参数
+
+-->
+    <select id="getStudentById" resultType="com.zl.demo.entity.Student">
+    select * from tb_student where sno= #{sno};
+
+    </select>
+</mapper>
